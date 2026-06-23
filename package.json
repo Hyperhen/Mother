@@ -1,7 +1,7 @@
 {
-  "name": "mother-beauty-salon",
+  "name": "beauty-hall-salon",
   "version": "1.0.0",
-  "description": "Beautiful beauty salon website",
+  "description": "Beautiful beauty salon website - Beauty Hall",
   "scripts": {
     "build": "mkdir -p public && cp index.html styles.css script.js public/"
   }
