@@ -1,11 +1,4 @@
 {
-  "name": "Mother - Beauty Salon",
-  "version": 2,
-  "public": true,
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
-    }
-  ]
+  "buildCommand": "mkdir -p public && cp index.html styles.css script.js public/",
+  "outputDirectory": "public"
 }
