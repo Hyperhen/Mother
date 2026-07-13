@@ -194,7 +194,7 @@
                 <div class="contact-item">
                     <div class="contact-icon">📍</div>
                     <h3>Адреса</h3>
-                    <p><a href="#" id="addressLink" class="address-link">Натисніть для відкриття на карті</a></p>
+                    <p><a href="https://maps.app.goo.gl/3HXE2WfT674NvyUm8" target="_blank" class="address-link">Натисніть для відкриття на карті</a></p>
                 </div>
                 <div class="contact-item">
                     <div class="contact-icon">🕐</div>
@@ -265,17 +265,6 @@
             alert("Сталася помилка відправки.");
             console.error(error);
         });
-    });
-
-    // Google Maps функціональність
-    document.getElementById('addressLink').addEventListener('click', function(e) {
-        e.preventDefault();
-        // ЗМІНІТЬ координати на реальну адресу салону
-        // Формат: latitude,longitude
-        const latitude = 50.4501;  // приклад
-        const longitude = 30.5234; // приклад
-        const mapsUrl = `https://www.google.com/maps/search/${latitude},${longitude}`;
-        window.open(mapsUrl, '_blank');
     });
     </script>
 </body>
