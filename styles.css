@@ -127,6 +127,70 @@ body {
     font-weight: 500;
 }
 
+/* Social Buttons */
+.social-buttons {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.social-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.social-btn svg {
+    width: 26px;
+    height: 26px;
+    transition: all 0.3s ease;
+}
+
+.tiktok-btn {
+    background: linear-gradient(135deg, #25f4ee 0%, #192a56 100%);
+    color: white;
+}
+
+.tiktok-btn:hover {
+    transform: translateY(-6px) scale(1.12);
+    box-shadow: 0 12px 35px rgba(37, 244, 238, 0.5);
+}
+
+.instagram-btn {
+    background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: white;
+}
+
+.instagram-btn:hover {
+    transform: translateY(-6px) scale(1.12);
+    box-shadow: 0 12px 35px rgba(220, 39, 67, 0.5);
+}
+
+.mobile-social {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.mobile-social .social-btn {
+    width: 56px;
+    height: 56px;
+}
+
+.mobile-social .social-btn svg {
+    width: 30px;
+    height: 30px;
+}
+
 /* Hero Section */
 .hero {
     height: 100vh;
@@ -541,6 +605,20 @@ body {
         display: none;
     }
 
+    .social-buttons {
+        gap: 0.8rem;
+    }
+
+    .social-btn {
+        width: 44px;
+        height: 44px;
+    }
+
+    .social-btn svg {
+        width: 22px;
+        height: 22px;
+    }
+
     .mobile-menu.active {
         display: block;
     }
@@ -591,6 +669,20 @@ body {
 @media (max-width: 480px) {
     .logo {
         font-size: 1.5rem;
+    }
+
+    .social-buttons {
+        gap: 0.6rem;
+    }
+
+    .social-btn {
+        width: 40px;
+        height: 40px;
+    }
+
+    .social-btn svg {
+        width: 20px;
+        height: 20px;
     }
 
     .hero h1 {
