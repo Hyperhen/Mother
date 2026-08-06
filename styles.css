@@ -148,6 +148,7 @@ body {
     box-shadow: 0 5px 18px rgba(212, 165, 116, 0.2);
     position: relative;
     overflow: hidden;
+    flex-shrink: 0;
 }
 
 .social-btn::before {
@@ -169,6 +170,9 @@ body {
 .social-btn svg {
     width: 24px;
     height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: all 0.3s ease;
     position: relative;
     z-index: 2;
